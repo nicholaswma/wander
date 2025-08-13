@@ -7,7 +7,7 @@ const Wrapper = styled.div<{ withBackground?: boolean }>`
   min-height: 100vh;
   background: ${({ theme, withBackground }) =>
     withBackground
-      ? `linear-gradient(180deg, #26126f 0%, ${theme.displayTheme === "dark" ? "#111" : "#FFF"} 150px);`
+      ? `linear-gradient(180deg, ${theme.displayTheme === "dark" ? "#26126f" : "#E3D8F6"} 0%, ${theme.displayTheme === "dark" ? "#111" : "#FFF"} ${theme.displayTheme === "dark" ? "150px" : "34.57%"});`
       : "transparent"};
 `;
 
